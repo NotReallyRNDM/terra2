@@ -16,4 +16,7 @@ Most stuff is there, unimplimented
 that is a problem for later
 
 
+I did this way too late.
 
+
+This project is about a polling site that may or may not be finished next week.
