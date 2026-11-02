@@ -12,7 +12,7 @@ def get_db():
 
 
 def init_db():
-    schema_path = BASE_DIR / "schema.sql"
+    schema_path = BASE_DIR / "sql.sql"
 
     with get_db() as db:
         db.executescript(
