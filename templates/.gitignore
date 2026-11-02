@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.pyc
+
+.env
+discordtoken.env
+
+polls.db
+instance/
+
+.vscode/

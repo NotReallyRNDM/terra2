@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset ="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+        Polling site
+    </title>
+
+
+<div class="home-layout">
+    <div class="main-box">
+
+        <style>
+            body{
+                font-family: Helvetica, sans-serif;
+                max-width: 700px;
+                margin: 60px auto;
+                padding: 20px;
+                background: #e9a1eb;
+                color: #211212;
+            }
+
+            main{
+                background: white; 
+                padding: 30px;
+                border-radius: 12px;
+                box-shadow: 0 0 20px #0001;
+            }
+            a{
+                display: inline-block;
+                padding: 8px 14px;
+                background: #366ad8;
+                color: white;
+                text-decoration: none;
+                border-radius: 7px;
+            }
+        </style>
+    </div>
+
+    <div class="description">
+        <h2>Info: </h2>
+        <p>
+            This is my polling site. Nothing much exists yet,
+            It should be able to do polls... soon <br>
+            yummy~ 
+        </p>
+    </section>
+
+</head>
+
+
+
+
+<body>
+    <main>
+        <h1>Poll 2</h1>
+        <h3> Make poll/account</h3>
+        <a href="/">Home</a>
+        <p><a href="/create">Create a poll</a></p>
+    </main>
+
+
+    <br>
+    {% if current_user.is_authenticated%}
+        <p>Logged in as {{ current_user.username }}</p>
+
+        <form action="{{ url_for('logout') }}" method="POST">
+            <button type="submit">Logout</button>
+        </form>
+
+    {% else %}
+        <p><a href="{{ url_for('register') }}">Register</a></p>
+        <p><a href="{{ url_for('login') }}">Login</a></p>
+    {% endif %}
+
+
+
+</body>
+</html>
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+<em>Remark: It's 1:38am idk what to do for this anymore
+    yum. Must find way host online yay~ python everywhere maybe
+</em>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

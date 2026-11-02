@@ -1,0 +1,1 @@
+Half finished polling website. Login, register 'home' and making a poll button works.

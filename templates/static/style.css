@@ -1,0 +1,33 @@
+.description {
+    max-width: 700px;
+    margin: 40px auto;
+    padding:25px;
+    background: #222633;
+    border-radius: 10px;
+    color: #eeeeee;
+    line-height: 1.6;
+}
+
+.description h2 {
+    color: #247af2;
+    margin-top: 0;
+}
+
+.home-layout {
+    display: flex;
+    gap: 25px;
+    align-items: flex-start;
+}
+
+.main-box{
+    flex: 3;
+
+}
+
+.info-box{
+    flex: 1;
+    background: #222633;
+    padding: 20px;
+    border-radius: 10px;
+    color: #eeeeee;
+}

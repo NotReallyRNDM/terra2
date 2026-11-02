@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset ="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+        {{ poll["question"] }}
+    </title>
+
+</head>
+
+<body>
+    <h1>{{ poll["question"] }}</h1>
+    <h3>Options</h3>
+
+    <ul>
+        {% for option in options%}
+            <li>{{option["option_text"]}}</li>
+        {% endfor %}
+    </ul>
+
+    <p>
+        Share this link:
+        <input
+            type="text"
+            value="{{ request.url }}"
+            readonly
+            onclick="this.select()"
+        >
+    </p>
+
+    <style>
+        body{
+            font-family: Franklin Gothic Medium, Arial Narrow, Arial, sans-serif;
+            max-width: 280px;
+            margin: 80px auto;
+            padding: 100px;
+            background: #eda6c7;
+            color: #1e60bd;
+        }
+    </style>
+
+
+
+    <a href="/">Home</a>
+
+
+</body>
+</html>
