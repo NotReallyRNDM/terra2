@@ -10,7 +10,6 @@ def get_db():
     connection.execute("PRAGMA foreign_keys = ON")
     return connection
 
-
 def init_db():
     schema_path = BASE_DIR / "sql.sql"
 
@@ -18,9 +17,6 @@ def init_db():
         db.executescript(
             schema_path.read_text(encoding="utf-8")
         )
-
-
-
 
 if __name__ == "__main__":
     init_db()
