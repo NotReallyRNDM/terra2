@@ -6,7 +6,6 @@ from werkzeug.security import(
     generate_password_hash, check_password_hash
 )
  
-
 app = Flask(__name__)
 #temp
 app.config["SECRET_KEY"] = "ahh?" 
@@ -40,7 +39,6 @@ def load_user(user_id):
         user["username"],
         user["password_hash"],
     )
-
 
 @app.route("/register", methods = ["GET", "POST"])
 def register():
@@ -78,16 +76,10 @@ def register():
                 return redirect(url_for("register"))
             raise
 
-
-
         flash("account made, me~ now try login")
         return redirect(url_for("login"))
 
     return render_template("register.html")
-
-
-
-
 
 @app.route("/login", methods=["GET", "POST"])
 def login():
@@ -173,7 +165,6 @@ def create_poll():
     return render_template("create_poll.html")
 
 @app.route("/poll/<public_id>")
-
 
 def view_poll(public_id):
     with get_db() as db:
